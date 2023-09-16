@@ -1,0 +1,97 @@
+Formation Web
+
+09/09/2023
+
+Env Dev -> vs Code / Git / CLI
+Env Intermediaire -> Github / Netlify / Render / Vercel
+Env Remote -> Serveur / Nom de domaine
+
+Exercice clavier : MonkeyType
+
+Nom de Domaine
+Url : identification site anakirai / Uniforme ressource locator / lien
+www : world wide web
+Nom de domaine -> unique identifiant / facebook.com
+
+Installation à faire.
+Git
+
+mandefa mp @Julien Rajerison -> DTC WEB
+
+Création mombamomba anao/ jerene @alarobia misi call sur fb
+Nom  h1
+
+Etudes
+ol
+
+experiences
+ul
+
+decorena @br/hr/u/mark
+
+Questions
+
+Mcreer dossier suv VS avec branch irai
+de tsi maints misi io branch io ao @lai repository
+
+
+git checkout -b (nom-branche)
+raha ifindra ao @branche (nom-branche) avec creation
+
+git checkout (nom-branche) ra branche efa misi
+
+ni zavatra atao ref miasa
+git branch
+git checkout
+git merge
+
+git branch -M (nom-branche) (m -> message)
+ref le mcreer branch sadi merge
+
+ra misi branche 2
+ra anao merge de tsi maints makao @le branche principal de ao no manao merge anle branche afa
+
+git merge abort -> annulé lai merge
+
+ni checkout de tsi branche iani no afaka fa ni commit iani ko
+git checkout commit
+
+git log
+ijeri ni log rehetra si ni version commit
+
+day 2 (16092023)
+attribut -> entina anahana element irai ao anatina element html ao @balise ouverture
+
+mianatra resaka image (img)
+ni src afak atao lien anle sari
+misi attribut alt/width/lenght...
+
+resaka lien (element a) avec href
+rehefa zavatra atao ho telecharger-na de asiana attribut download fotsini
+
+resaka tableau -> element table
+ao anati table misi 
+thead -> entete table
+misi th
+
+tbody -> corps table
+misi tr -> td
+ligne ni dikani tr (table row)
+
+ni element rehetra manana attribut style ao @balise ouvrante
+ex : <h1 style="color:green;"></h1>
+color : propriété
+green : valeur
+point virgule no manasaraka anlay propriété/valeur
+deux point no manasaraka ni propriété si valeur
+ni fampiasana color anati page irai dia misi regle arahina
+misi color principal
+misi ni mpanampi
+misi ni décoration
+site color.co
+site coolors.co
+
+
+exercice day 2
+mitadi element 15/personnes
+
