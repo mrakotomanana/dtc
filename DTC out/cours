@@ -91,6 +91,20 @@ misi ni décoration
 site color.co
 site coolors.co
 
+Hay_Arena23!?
+
+mianatra momba ni css
+page anakirai misi cascade style
+reliéna @lai page le style @alalan'ny
+link rel(relation)="stylesheet" href=""
+misi regle tsi maints arahina ni manao css ao @lay fichier externe
+mila tenenina tsar lai element cibléna arahina {}
+ao anatin'lai {} lai regle rehetra no mipetraka
+misi id attribut element / tsi azo asiana espace ni value
+ref ao @lai fichier style de #{nom id attribut}
+misi attribut class .{nom class}
+!important ra iforcer anlai style irai
+
 
 exercice day 2
 mitadi element 15/personnes

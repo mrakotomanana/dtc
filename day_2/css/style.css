@@ -1,0 +1,19 @@
+h1 {
+    color: rgb(188, 143, 19);
+}
+
+body {
+    background: rgb(0, 255, 187);
+}
+
+#h1_ralambo {
+    color: rgb(226, 208, 43);
+}
+
+#h1_ranavalona {
+    color: rgb(255, 0, 17);
+}
+
+.h1-section {
+    color: chartreuse;
+}
