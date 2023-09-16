@@ -1,0 +1,23 @@
+# git pull --allow-unrelated-histories origin master
+# alohan'ni git push ref miova branch
+
+ # It could be master
+ git pull origin master --allow-unrelated-histories
+
+ # Or main
+ git pull origin main --allow-unrelated-histories
+
+ # Or just try with origin
+ git pull origin main --allow-unrelated-histories
+
+ :It seems like, there were new commits being pushed between your last git fetch and git push. In this case, you are required to repeat your steps and rebase my_feature_branch one more time.
+
+git fetch
+
+git rebase feature/my_feature_branch
+
+git push origin feature/my_feature_branch
+
+After the git fetch I recommend examining the situation with gitk --all.
+
+Git push rejected non-fast-forward means, this error is faced when git cannot commit your changes to the remote repository. This may happen because your commit was lost or if someone else is trying to push to the same branch as you. This is the error you face.
