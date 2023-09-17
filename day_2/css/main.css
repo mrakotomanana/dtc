@@ -31,3 +31,16 @@ tr:nth-child(even) {
     background-color: rgb(67, 64, 60);
 }
 
+.avatar {
+    display: block;
+    border-radius: 50%;
+    width: 100px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.images {
+    width: 50%;
+}

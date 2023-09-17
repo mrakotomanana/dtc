@@ -201,3 +201,46 @@ initial-scale=1.0 part sets the initial zoom level when the page is first loaded
 script -> ametrahana ni côté client javascript
 
 base -> misi attribut href si target (afaka misi an'izi roa). Io zan no base url/target ho an'ni relative url ao @page
+
+=============================================================================================================
+link : resaka eto ni balise a
+ohatra :  <a href="./test.html" target="_blank">Test</a>
+
+The target attribute can have one of the following values:
+
+    _self - Default. Opens the document in the same window/tab as it was clicked
+    _blank - Opens the document in a new window or tab
+    _parent - Opens the document in the parent frame
+    _top - Opens the document in the full body of the window
+
+ohatra iani ko :
+<a href="default.asp">
+  <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+</a> 
+
+Use mailto: inside the href attribute to create a link that opens the user's email program (to let them send a new email)
+ <a href="mailto:someone@example.com">Send email</a> 
+
+button as a link  <button onclick="document.location='default.asp'">HTML Tutorial</button> 
+
+link with a title
+ <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a> 
+
+    Use the <a> element to define a link
+    Use the href attribute to define the link address
+    Use the target attribute to define where to open the linked document
+    Use the <img> element (inside <a>) to use an image as a link
+    Use the mailto: scheme inside the href attribute to create a link that opens the user's email program
+
+By default, links will appear as follows in all browsers:
+
+    An unvisited link is underlined and blue
+    ao @css izi dia a:link
+
+    A visited link is underlined and purple
+    ito ndrai a:visited
+
+    An active link is underlined and red
+    ari a:active ndrai
+
+Rehefa mouse over dia a:hover ndrai
