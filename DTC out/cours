@@ -1,4 +1,4 @@
-Formation Web
+# Formation Web
 
 09/09/2023
 
@@ -33,7 +33,6 @@ Questions
 
 Mcreer dossier suv VS avec branch irai
 de tsi maints misi io branch io ao @lai repository
-
 
 git checkout -b (nom-branche)
 raha ifindra ao @branche (nom-branche) avec creation
@@ -70,7 +69,7 @@ resaka lien (element a) avec href
 rehefa zavatra atao ho telecharger-na de asiana attribut download fotsini
 
 resaka tableau -> element table
-ao anati table misi 
+ao anati table misi
 thead -> entete table
 misi th
 
@@ -79,7 +78,9 @@ misi tr -> td
 ligne ni dikani tr (table row)
 
 ni element rehetra manana attribut style ao @balise ouvrante
-ex : <h1 style="color:green;"></h1>
+
+ex : h1 style="color:green;"
+
 color : propriété
 green : valeur
 point virgule no manasaraka anlay propriété/valeur
@@ -105,11 +106,10 @@ ref ao @lai fichier style de #{nom id attribut}
 misi attribut class .{nom class}
 !important ra iforcer anlai style irai
 
-
 exercice day 2
 mitadi element 15/personnes
 
-devoir day 2 
+devoir day 2
 atao eo avovoni ni sari boribori
 asian hr
 nom
@@ -127,3 +127,48 @@ asiana lien oe Telecharger mon CV
 rehefa manao page de manao dessin alo
 ts mahazo manao css anati html
 aona ni milance anle site @netlify
+
+Vakio tsara attentivement dia samy manao rapport isan'olona daholo.
+
+style color
+23C9FF
+7CC6FE
+CCD5FF
+E7BBE3
+C884A6
+
+1A1F16
+1E3F20
+345830
+
+173753
+6DAEDB
+2892D7
+
+Color meanings
+One way to incorporate color psychology when choosing colors for a website is through consideration of common color meanings. Different colors, both consciously and subconsciously, spark certain feelings. These feelings are largely influenced by cultural contexts, as well as personal experiences. Below are some examples of common color associations:
+
+Red: passion, power, love, danger, excitement
+Blue: calm, trust, competence, peace, logic, reliability
+Green: health, nature, abundance, prosperity
+Yellow: happiness, optimism, creativity, friendliness
+Orange: fun, freedom, warmth, comfort, playfulness
+Purple: luxury, mystery, sophistication, loyalty, creativity
+Pink: nurturing, gentleness, sincerity, warmth
+Brown: nature, security, protection, support
+Black: elegance, power, control, sophistication, depression
+White: purity, peace, clarity, cleanliness
+Some color meanings appear contradictory. For instance, red often denotes danger, but it can also convey love and passion. Black can evoke feelings of power in some cases and depression in others. The key here is context.
+
+Context is crucial to consider when choosing colors for a brand or website. Using the color red for a website won't automatically signal danger, just like it won't automatically signal romance. The other elements on the page, such as typography, imagery, and messaging, all work symbiotically to convey a certain look and feel.
+
+=============================================================================================================
+Legal CSS Properties
+
+There are only a very limited selection of CSS properties that are allowed to be used in the colgroup:
+
+width property
+visibility property
+background properties
+border properties
+

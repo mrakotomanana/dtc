@@ -1,0 +1,18 @@
+table {
+    border: 1px solid white;
+    background-color: rgb(86, 194, 202);
+}
+
+th {
+    border: 1px solid white;
+    background-color: rgb(86, 194, 202);
+}
+
+td {
+    border: 1px solid white;
+    background-color: rgb(86, 194, 202);
+}
+
+colgroup > col[span="3"] {
+    visibility: collapse;
+}
