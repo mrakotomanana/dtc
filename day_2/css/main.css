@@ -38,3 +38,21 @@ a[href*=mailto]:link {
     background-color: #345830;
     padding: 20px;
 }
+
+#info-contact {
+    padding: 20px;
+}
+
+#info-contact > .info {
+    border-top: 1px solid ;
+    border-bottom: 1px solid rgb(185, 170, 170);
+    padding: 10px;
+}
+
+.desc {
+    float: right;
+}
+
+.title-desc{
+    float: left;
+}
