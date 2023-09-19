@@ -38,3 +38,24 @@ a[href*=mailto]:link {
     background-color: #345830;
     padding: 20px;
 }
+
+#tab-formation > table {
+    border: 1px solid white;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+#tab-formation > table > caption {
+
+}
+
+#tab-formation th {
+    border: 1px solid white;
+    padding: 10px;
+}
+
+#tab-formation td {
+    border: 1px solid white;
+    padding: 10px;
+}
