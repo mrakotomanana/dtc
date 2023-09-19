@@ -2,6 +2,7 @@ body {
     background: #1A1F16;
     color: whitesmoke;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 .avatar {
@@ -39,6 +40,10 @@ a[href*=mailto]:link {
     padding: 20px;
 }
 
+#info-contact {
+    padding: 20px;
+}
+
 #tab-formation > table {
     border: 1px solid white;
     width: 50%;
@@ -58,4 +63,9 @@ a[href*=mailto]:link {
 #tab-formation td {
     border: 1px solid white;
     padding: 10px;
+}
+
+footer {
+    background: #1A1F16;
+    color: whitesmoke;
 }
