@@ -47,6 +47,20 @@ a[href*=mailto]:link {
     padding: 20px;
 }
 
+<<<<<<< HEAD
+#info-contact > .info {
+    border-top: 1px solid ;
+    border-bottom: 1px solid rgb(185, 170, 170);
+    padding: 10px;
+}
+
+.desc {
+    float: right;
+}
+
+.title-desc{
+    float: left;
+=======
 #tab-formation > table {
     border: 1px solid white;
     width: 50%;
@@ -73,6 +87,7 @@ footer {
     justify-content: flex-end;
     background: #1A1F16;
     color: whitesmoke;
+<<<<<<< HEAD
     width: 100%;
     height: 150px;
 }
@@ -87,4 +102,7 @@ footer > div > a{
     text-align: center;
     color: whitesmoke;
     text-decoration: none;
+=======
+>>>>>>> aff2b5978960cc199250bccb941b287d9355493d
+>>>>>>> 2389f2d68f2f5fd73d3c2f479b1aa4128131f7d6
 }
