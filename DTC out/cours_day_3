@@ -70,4 +70,17 @@ misi ni display none (ts visible)
 misi ni display block (visible)
 misi ni display content (visible fa ao ambadik'lai contenu)
 
+justify-content : ajustement contenu element tsirairai
+align-items : alignment text 
 
+devoir
+manao recherche momba an'ni grid
+deploiement netlify si github pages ni page cv
+atao mitovi @username github ex mrakotomanan.netlify.app
++ font-face
++ flex
++ color / border
+
+ao anati nav tsi tokoni hisi div intsoni
+div ni element ngeza ndrindra
+mila mitadi ni ordre elements
