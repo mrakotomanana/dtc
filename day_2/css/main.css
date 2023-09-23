@@ -44,7 +44,6 @@ a[href*=mailto]:link {
     padding: 20px;
 }
 
-<<<<<<< HEAD
 #info-contact > .info {
     border-top: 1px solid ;
     border-bottom: 1px solid rgb(185, 170, 170);
@@ -57,7 +56,8 @@ a[href*=mailto]:link {
 
 .title-desc{
     float: left;
-=======
+}
+
 #tab-formation > table {
     border: 1px solid white;
     width: 50%;
@@ -66,7 +66,7 @@ a[href*=mailto]:link {
 }
 
 #tab-formation > table > caption {
-
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #tab-formation th {
@@ -82,5 +82,4 @@ a[href*=mailto]:link {
 footer {
     background: #1A1F16;
     color: whitesmoke;
->>>>>>> aff2b5978960cc199250bccb941b287d9355493d
 }
