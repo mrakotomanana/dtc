@@ -1,0 +1,73 @@
+font family de basé @lai ordi local
+
+atao recherche 
+unité relative...
+aona ni fampiasana ni font face
+inon no atao oe vertical-align si i fampiasana azi
+inon ni atao oe pad - padding
+
+font face -> telecharger-na lai font @internet de ampiasaina ao @page-nao
+ohatra ao @google font
+
+rehefa manao style de font caractère 1/1 fa text ra lai fitambarani
+text-align zan par rapport @parent misi width
+
+text-shadow unité/px unité/px unité/px color
+exemple text-shadow 12px 2px 3px #000000
+
+12px axe x
+2px axe y
+3px blur
+#000 color
+
+long hand
+    border-width: 10px;
+    border-style: groove;
+    border-color: #0d0d0d;
+
+short hand
+        border: 1px solid #0d0d0d;
+
+afa preciser-na tsara ni border
+top
+left
+right
+bottom
+
+Ex : 
+border-top: 1px solid #0d0d0d;
+border-bottom: 1px groove #0d0d0d;
+
+arrondissement anlai angle : radius
+top-left
+top-right
+bottom-left
+bottom-right
+
+mila atao carré tsar ra te ahazo rond @lai sari
+
+rehefa manao positionnement absolue
+par rapport @ecran ni top left right bottom
+afka kitihina ni top left right bottom
+
+misi marge par defaut mila alana
+
+rehefa manao positionnement relative dia ni navigateur no mposition anlai element
+tsi afk kitihina ni top left right bottom
+fa ni marge no afka lalaovina
+
+
+padding  marge intérieur
+marging marge extérieur
+
+atao positionnement sticky iz ra tina tazomina ts ihetsika 
+asian postion top/bottom
+
+rehefa anao alignment dia manao display
+
+misi ni display flex (flex-box)
+misi ni display none (ts visible)
+misi ni display block (visible)
+misi ni display content (visible fa ao ambadik'lai contenu)
+
+
