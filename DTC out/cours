@@ -245,6 +245,7 @@ By default, links will appear as follows in all browsers:
 
 Rehefa mouse over dia a:hover ndrai
 
+<<<<<<< HEAD
 =======================================
 
 rehefa anao deploiement site static
@@ -258,4 +259,38 @@ heroku
 
 configurerna lai plateforme de tsi maints asiana index
 miditra ao @site configuration -> site information -> change site name
+=======
+================================================================
+
+https://training-dtc-michel.onrender.com
+Render
+https://dashboard.render.com/static/srv-ck5er1mru70s73cogq80/deploys/dep-ck5euaeru70s73cq4nhg
+
+A build for static site training-dtc-michel has failed. 😞
+
+Access your static site here: https://dashboard.render.com/static/srv-ck5er1mru70s73cogq80
+
+if you need help, we're always available at https://community.render.com.
+
+================================================================================
+
+site sur netlify : https://blog-michel.netlify.app/
+configuration netlify : https://app.netlify.com/sites/blog-michel/overview
+
+================================================================================
+git log
+Le flag --oneline rassemble tous les commits sur une seule ligne.
+Le flag --decorate ordonne à git log d'afficher toutes les références qui pointent vers chaque commit.
+L'option --stat affiche le nombre d'ajouts et de suppressions effectués dans chaque fichier modifié par chaque commit.
+Si vous souhaitez consulter les changements réellement apportés par chaque commit, ajoutez l'option -p à git log.
+La commande git shortlog constitue une version spécifique de git log destinée à créer des annonces de livraison. Elle regroupe les commits par auteur et affiche la première ligne de chaque message de commit. C'est une manière simple de voir qui a travaillé dessus.
+Par défaut, la commande git shortlog trie les sorties par nom d'auteur, mais il vous est également possible d'ajouter l'option -n pour les trier selon le nombre de commits par auteur.
+
+================================================================
+
+Lorsque vous supprimez la branche future-plans, vous pouvez toujours y accéder à partir de main à l'aide d'un ID de commit. Par exemple, si vous voulez annuler les changements ajoutés à partir de future-plans, utilisez l'identifiant de commit que vous venez de recevoir pour revenir à cette branche.
+
+$ git branch -d future-plans 
+Deleted branch futurs-plans (was 3a4b395).
+>>>>>>> f1fac914c084cfc0124882e425bf0bf0d3720f42
 
