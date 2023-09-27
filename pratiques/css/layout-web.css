@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Tangerine Regular";
-    src: url("../fonts/Tangerine-Regular.ttf");
+    src: url("../fonts/Tangerine/Tangerine-Regular.ttf");
 }
 
 @font-face {
     font-family: "Tangerine Bold";
-    src: url("../fonts/Tangerine-Bold.ttf");
+    src: url("../fonts/Tangerine/Tangerine-Bold.ttf");
 }
 
 * {
@@ -23,6 +23,9 @@ body {
     color: whitesmoke;
     padding: 20px;
     text-align: center;
+    font-family: "Tangerine Regular";
+    font-size: 48px;
+    text-shadow: 4px 4px 4px rgb(32, 22, 22);
 }
 
 .nav {

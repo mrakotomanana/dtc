@@ -1,0 +1,19 @@
+mampiasa font en ligne 
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+
+karazana href
+
+https://fonts.googleapis.com/css?family=Tangerine|Inconsolata|Droid+Sans
+
+https://fonts.googleapis.com/css?family=Tangerine:bold,bolditalic|Inconsolata:italic|Droid+Sans
+
+https://fonts.googleapis.com/css?family=Cantarell:italic|Droid+Serif:bold
+https://fonts.googleapis.com/css?family=Cantarell:i|Droid+Serif:b
+https://fonts.googleapis.com/css?family=Cantarell:i|Droid+Serif:700
+
+font-display vous permet de contrôler ce qui se passe lorsque la police est indisponible. Il est généralement recommandé de spécifier une valeur autre que auto par défaut.
+
+https://fonts.googleapis.com/css?family=Roboto&display=swap
+
+rehefa misi espace lai anarana family de ovaina + lai espace
+https://fonts.googleapis.com/css?family=Roboto+Mono

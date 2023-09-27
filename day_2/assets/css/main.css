@@ -1,4 +1,19 @@
-*{
+@font-face {
+    font-family: 'Tangerine Bold';
+    src: url('../font/Tangerine/Tangerine-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Tangerine Regular';
+    src: url('../font/Tangerine/Tangerine-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto Medium';
+    src: url('../font/Roboto/Roboto-Medium.ttf');
+}
+
+* {
     box-sizing: border-box;
 }
 
@@ -8,12 +23,20 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+header {
+    border-bottom: 1px solid rgb(185, 170, 170);
+}
+
+header h2 {
+    text-align: center;
+    font-family: 'Tangerine Bold';
+}
+
 .avatar {
     display: block;
     border-radius: 50%;
     width: 100px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     margin-bottom: 10px;
 }
 
@@ -27,12 +50,14 @@ body {
 
 .d-center {
     width: 50%;
-    height: 10px;
+    height: 5px;
     background-color: rgb(62, 62, 62);
 }
 
 .info {
     text-align: center;
+    font-family: 'Tangerine Regular';
+
 }
 
 a[href*=mailto]:link {
@@ -52,18 +77,17 @@ a[href*=mailto]:link {
 
 #info-contact {
     padding: 20px;
+
 }
 
-#info-contact > .info {
-    border-top: 1px solid ;
-    border-bottom: 1px solid rgb(185, 170, 170);
+#info-contact>.info {
     padding: 10px;
 }
 
 .info-details {
     display: flex;
-	flex-flow: row nowrap;
-	justify-content: center;
+    flex-flow: row nowrap;
+    justify-content: center;
     align-items: center;
 }
 
@@ -71,31 +95,25 @@ a[href*=mailto]:link {
     width: 50%;
 }
 
-.title-desc{
-<<<<<<< HEAD
+.title-desc {
     float: left;
-=======
     width: 50%;
 }
 
 .date {
     display: block;
->>>>>>> f1fac914c084cfc0124882e425bf0bf0d3720f42
 }
 
-#tab-formation > table {
+#tab-formation>table {
     border: 1px solid white;
     width: 50%;
     text-align: center;
     margin: auto;
 }
 
-#tab-formation > table > caption {
-<<<<<<< HEAD
+#tab-formation>table>caption {
     font-family: Georgia, 'Times New Roman', Times, serif;
-=======
     color: whitesmoke;
->>>>>>> f1fac914c084cfc0124882e425bf0bf0d3720f42
 }
 
 #tab-formation th {
@@ -111,23 +129,27 @@ a[href*=mailto]:link {
 footer {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background: #1A1F16;
     color: whitesmoke;
-<<<<<<< HEAD
-=======
     height: 150px;
+    padding: 5px;
+
 }
 
-footer > div{
-    text-align: center;
-    color: whitesmoke;
-    margin: 10px;
-}
-
-footer > div > a{
+footer a {
     color: whitesmoke;
     text-decoration: none;
->>>>>>> f1fac914c084cfc0124882e425bf0bf0d3720f42
+    display: block;
+    padding: 10px;
+    background-color: burlywood;
+    color: black;
+    font-family: 'Roboto Medium';
+
+}
+
+footer p {
+    padding: 10px;
+
 }
