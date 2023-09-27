@@ -30,6 +30,7 @@ header {
 header h2 {
     text-align: center;
     font-family: 'Tangerine Bold';
+    font-size: 45px;
 }
 
 .avatar {
@@ -57,7 +58,7 @@ header h2 {
 .info {
     text-align: center;
     font-family: 'Tangerine Regular';
-
+    font-size: 45px;
 }
 
 a[href*=mailto]:link {
@@ -77,7 +78,6 @@ a[href*=mailto]:link {
 
 #info-contact {
     padding: 20px;
-
 }
 
 #info-contact>.info {
@@ -89,6 +89,29 @@ a[href*=mailto]:link {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+}
+
+.details-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sociaux {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.sociaux img {
+    width: 40px;
+    height: 40px;
+    background-color: white;
 }
 
 .desc {
@@ -134,8 +157,6 @@ footer {
     background: #1A1F16;
     color: whitesmoke;
     height: 150px;
-    padding: 5px;
-
 }
 
 footer a {
@@ -150,6 +171,6 @@ footer a {
 }
 
 footer p {
-    padding: 10px;
-
+    font-family: 'Roboto Medium';
+    font-size: 45px;
 }
