@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(147, 57, 57);
+}
+
+#topnav {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    overflow: hidden;
+}
+
+#topnav a {
+    color: white;
+    border: 1px solid white;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    float: left;
+}
+
+#topnav a:hover {
+    background-color: rgb(136, 108, 108);
+    color: black;
+}

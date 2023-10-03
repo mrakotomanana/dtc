@@ -1,0 +1,79 @@
+div {
+    overflow-x: auto;
+}
+
+#customers {
+    width: 100%;
+    height: auto;
+    border: 1px solid #676666;
+}
+
+#customers caption {
+    caption-side: bottom;
+}
+
+#customers td,
+#customers th {
+    border-bottom: 1px solid #676666;
+}
+
+#customers tr:nth-child(even) {
+    background-color: #3c3a3a;
+    color: white
+}
+
+#customers tr:hover {
+    background-color: #58dead;
+}
+
+#customers th {
+    text-align: center;
+    padding: 5px;
+    background-color: #58dead;
+    height: 100px;
+    vertical-align: middle;
+    
+}
+
+#list-with-colors ol {
+    background-color: violet;
+    margin: 10px;
+    padding: 45px;
+    list-style-type: none;
+}
+
+#list-with-colors ol li {
+    background: #4c3f3f;
+    padding: 5px;
+    margin: 5px;
+}
+
+#list-with-colors ul {
+    background-color: tomato;
+    margin: 10px;
+    padding: 45px;
+    list-style-type: none;
+
+}
+
+#list-with-colors ul li {
+    background: #cce5ff;
+    margin: 5px;
+    padding: 5px;
+}
+
+#ul-images ul{
+    list-style-image: url('../images/sqpurple.gif');
+}
+
+#list-left-border ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    border-left: 4px solid #ff0000;
+    background-color: beige;
+}
+
+#list-left-border ul li {
+    padding: 5px;
+}
