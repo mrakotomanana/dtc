@@ -163,3 +163,359 @@
     <a href="./assets/images/CV_michel.pdf" download> Télécharger mon CV </a>
     <p>&copy;Copyright 2023</p>
   </footer>
+
+  ================================================================
+
+  @font-face {
+    font-family: "Tangerine Bold";
+    src: url("../font/Tangerine/Tangerine-Bold.ttf");
+  }
+  
+  @font-face {
+    font-family: "Tangerine Regular";
+    src: url("../font/Tangerine/Tangerine-Regular.ttf");
+  }
+  
+  @font-face {
+    font-family: "Roboto Medium";
+    src: url("../font/Roboto/Roboto-Medium.ttf");
+  }
+  
+  @font-face {
+    font-family: "Martian Mono Regular";
+    src: url("../font/Martian_Mono/static/MartianMono-Regular.ttf");
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #e6e49f;
+    color: rgb(68, 66, 66);
+    font-family: Calibri, sans-serif;
+  }
+  
+  header {
+    border-bottom: 1px solid rgb(185, 170, 170);
+  }
+  
+  header h2 {
+    text-align: center;
+    font-family: "Tangerine Bold";
+    font-size: 45px;
+  }
+  
+  .avatar {
+    display: block;
+    border-radius: 50%;
+    width: 100px;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  
+  .info-contact-key {
+    font-weight: bolder;
+  }
+  
+  .info-contact-value {
+    font-style: italic;
+  }
+  
+  .d-center {
+    width: 50%;
+    height: 5px;
+    background-color: rgb(0, 0, 0);
+  }
+  
+  .info {
+    text-align: center;
+    font-family: "Tangerine Regular";
+    font-size: 45px;
+  }
+  
+  a[href*="mailto"]:link {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+  
+  #experience {
+    background-color: #5a5766;
+    padding: 20px;
+    color: whitesmoke;
+  }
+  
+  #formation {
+    background-color: #48435c;
+    padding: 20px;
+    color: whitesmoke;
+  }
+  
+  .formation-details {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    padding: 5px;
+    margin: 5px;
+  }
+  
+  #info-contact {
+    padding: 20px;
+  }
+  
+  #info-contact > .info {
+    padding: 10px;
+  }
+  
+  .info-details {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .details-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .sociaux {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .sociaux img {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+  }
+  
+  .desc {
+    width: 50%;
+  }
+  
+  .title-desc {
+    float: left;
+    width: 50%;
+  }
+  
+  .date {
+    display: block;
+    font-size: small;
+  }
+  
+  .societe {
+    display: block;
+    font-size: large;
+  }
+  
+  #tab-formation {
+      display: flex;
+      justify-content: center;
+  }
+  
+  #tab-formation > table {
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  #tab-formation > table > caption {
+    color: whitesmoke;
+    caption-side: bottom;
+  }
+  
+  #tab-formation th {
+    background-color: #e6e49f;
+    padding: 10px;
+    color: black;
+  }
+  
+  #tab-formation td {
+    padding: 10px;
+  }
+  
+  footer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background: #5a5766;
+    color: whitesmoke;
+    height: 150px;
+    padding: 5px;
+    font-family: "Roboto Medium";
+  }
+  
+  footer a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    background-color: #e6e49f;
+    color: black;
+  }
+  
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <h1>Page contatct</h1>
+    <div>
+      <a href="./index.html" target="_blank">Vers index</a>
+      <a href="./about.html">vers about</a>
+    </div>
+
+    <center>
+      <table border="1">
+        <thead>
+          <th>Decimal</th>
+          <th>Hexa</th>
+          <th>Octal</th>
+          <th>Binary</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>000</td>
+            <td>000000</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>001</td>
+            <td>000001</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>2</td>
+            <td>002</td>
+            <td>000002</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>3</td>
+            <td>003</td>
+            <td>000003</td>
+          </tr>
+        </tbody>
+      </table>
+    </center>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1>Page about</h1>
+    <div>
+        <a href="./index.html">vers index</a>
+        <a href="./contact.html">vers contact</a>
+    </div>
+    <section>
+        <h1 id="h1_ralambo" class="h1-section">Ralambo</h1>
+    </section>
+    <section>
+        <h1 id="h1_ranavalona" class="h1-section">Ranavalona</h1>
+    </section>
+    <section>
+        <h1 id="h1_radama" class="h1-section">Radama</h1>
+    </section>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Séparateur incliné</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .top {
+            width: 100%;
+            height: 200px;
+            background-color: rgb(141, 81, 53);
+            clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 60px));
+        }
+
+        .bottom {
+            width: 100%;
+            height: 200px;
+            background-color: rgb(68, 101, 194);
+            clip-path: polygon(0 0,100% 60px,100% 100%,0 100%);
+            margin-top: -65px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="top"></div>
+    <div class="bottom"></div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
