@@ -1,6 +1,15 @@
+@font-face {
+    font-family: "Roboto Regular";
+    src: url("../font/Roboto/Roboto-Regular.ttf");
+}
+
 * {
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto Regular", sans-serif;
+}
+
+body{
+    margin: 0;
 }
 
 nav {
