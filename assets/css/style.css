@@ -1,5 +1,36 @@
-@font-face {
-    font-family: "Roboto Regular";
-    src: url("../font/Roboto/Roboto-Regular.ttf");
+* {
+    box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.site {
+    display: grid;
+    grid-template-rows: 100px 1fr 50px;
+    grid-template-columns: 2fr 8fr;
+}
+
+.header {
+    background-color: blue;
+    border: 1px solid #020202;
+    grid-column: 1 / span 2;
+}
+
+.body-content {
+    background-color: rgb(255, 0, 255);
+    border: 1px solid #020202;
+}
+
+.sidebar {
+    background-color: rgb(255, 208, 0);
+    border: 1px solid #020202;
+}
+
+.footer {
+    background-color: rgb(0, 238, 255);
+    border: 1px solid #020202;
+    grid-column: 1 / span 2;
+}
