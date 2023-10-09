@@ -1,0 +1,139 @@
+Une fois la grille déclarée, il faut indiquer le nombre de colonnes et de rangés que l’on souhaite. Pour cela, il faut utiliser les propriétés grid-template-columns et grid-template-rows.
+
+La propriété grid-template-columns permet donc de définir le nombre de colonnes. Il s’agit donc d’indiquer la largeur des différentes colonnes souhaitées. Le nombre de valeurs saisies va ainsi définir le nombre de colonnes.
+
+Le principe est le même pour la propriété grid-template-rows à laquelle il faut associer les hauteurs des différentes lignes.
+
+Les dimensions saisies peuvent utiliser les valeurs suivantes :
+
+px : une dimension fixe.
+% : un pourcentage positif relatif à la taille du conteneur de la grille.
+fr : correspond à une fraction de l’espace libre du conteneur de la grille.
+auto : les dimensions vont s’adapter en fonction du contenu des pistes.
+
+
+Voici donc un exemple de grille représentée graphiquement ainsi que le code correspondant. La grille se compose de trois colonnes et deux rangés, il y a donc trois valeurs pour grid-template-columns et deux valeurs pour grid-template-rows.
+
+.grid-container {
+   display: grid;
+   grid-template-columns: 250px auto 250px;
+   grid-template-rows: 100px auto;
+}
+
+Le modèle de grille nous offre une nouvelle unité flexible fr. Il s’agit d’une unité correspondant à des fractions de l’espace libre du conteneur. Les dimensions de l’espace libre sont calculées après avoir enlevé la somme des dimensions des items non-flexibles à la taille du conteneur.
+
+Prenons plusieurs exemples pour illustrer le fonctionnement de cette unité de mesure flexible en nous concentrant uniquement sur les largeurs des colonnes, le principe étant identique pour les hauteurs des rangés.
+
+Répétition des valeurs
+La fonction repeat() permet de répéter une valeur plusieurs fois. Elle fonctionne sur le principe repeat(nb_repetition, valeur).
+
+Ainsi les deux propositions suivantes sont équivalentes :
+
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-columns: repeat(3, 1fr);
+
+La valeur auto-fill utilisable pour le nombre de répétitions demande de répéter la valeur tant qu’il reste assez de place dans la conteneur. Elle n’est donc pas compatible avec l’unité fr.
+
+grid-template-columns: repeat(auto-fill, 200px);
+
+Il est possible de définir un intervalle de taille entre deux valeurs avec la fonction minmax(min, max). La colonne (ou la rangée) est alors dimensionnée dans l’intervalle des deux dimensions fournies min et max.
+
+Il est ainsi possible, par exemple, de demander à une colonne de faire 50% de large mais d’avoir une largeur minimale de 200px.
+
+grid-template-columns: minmax(200px,50%) 200px 200px;
+
+Notez que minmax() fonctionne aussi avec des mots clés min-content, max-content.
+
+Par défaut, si les éléments de la grille ne sont pas explicitement positionnés, ceux-ci vont se positionner automatiquement. Ils occuperont alors chacun une cellule de la grille dans l’ordre de leur place dans le code HTML. Si le nombre de cellules de la grille est supérieur au nombre d’éléments, il y aura donc des cellules vides.
+
+Dans l’exemple ci-dessous, les éléments ont été colorés pour une meilleure compréhension de leur position dans la grille.
+
+.grid-container {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 100px 300px;
+}
+
+<div class="grid-container">
+   <div>A</div>
+   <div>B</div>
+   <div>C</div>
+   <div>D</div>
+   <div>E</div>
+</div>
+
+Comme nous venons de le voir, par défaut les cellules de la grille se remplissent par rangé. Il est possible de changer le sens de remplissage en utilisant la propriété grid-auto-flow et en lui attribuant la valeur column à la place de la valeur par défaut row. Ainsi les éléments de la grille se positionneront les uns à la suite des autres par colonne.
+
+Dans les deux exemples précédents, tous les éléments occupent une cellule de la grille. Mais ce ne sera pas toujours le cas, il est possible de faire en sorte qu’un élément en particulier occupe plusieurs cellules (une plage de cellules) verticales ou horizontales. De fait, le positionnement automatique peut alors créer des trous dans la grille.
+
+Dans l’illustration ci-dessous, nous voyons bien que l’élément C qui occupe deux cellules (nous n’avons pas encore vu comment, mais cela va venir) ne rentre pas dans la cellule à côté de B. L’élément C passe donc sur la ligne suivante. Une cellule de la grille reste donc vide.
+
+Il est possible de changer ce comportement par défaut en ajoutant le mot clé dense avec la propriété grid-auto-flow.
+
+Lors de la construction de la grille, il est possible de donner des noms aux différentes lignes. Une fois les lignes nommées, il est possible de positionner les éléments en utilisant les noms des lignes à la place de leur numéro.
+
+Pour nommer une ligne, il suffit de mettre son nom entre [] à l’emplacement correspondant lors du dimensionnement des pistes.
+
+.grid-container {
+   display: grid;
+   grid-template-columns: [debut] 1fr [second] 1fr [troisieme] 1fr [derniere];
+   grid-template-rows: [truc] 100px [chose] 100px [bidule] 100px [machin];
+}
+
+.item {
+   grid-column-start: debut;
+   grid-column-end: troisieme;
+   grid-row-start: chose;
+   grid-row-end: bidule;
+}
+
+Pour positionner un élément sur plusieurs cellules, nous avons vu qu’il était possible de donner les lignes de départ et de fin. Une seconde solution consiste à donner explicitement les lignes de départ et à utiliser le mot span pour les lignes de fin (ou l’inverse) pour indiquer sur combien de cellules l’élément doit s’étendre.
+
+Dans cet exemple, item est positionné par rapport à la ligne verticale 1 et la ligne horizontale 2. La ligne verticale de fin n’est pas donnée explicitement, il est demandé à l’élément de s’étirer sur deux cellules.
+
+.item {
+   grid-column-start: 1 ;
+   grid-column-end: span 2;
+   grid-row-start: 2;
+}
+
+L’alignement horizontal des éléments se définit sur la grille avec la propriété justify-items. Les valeurs disponibles sont start, end, center et stretch (par défaut).
+
+Cette propriété s’applique sur la grille.
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr ;
+    grid-template-rows: 100px 150px;
+    justify-items: start;
+
+
+L’alignement vertical des éléments se définit sur la grille avec la propriété align-items. Les valeurs disponibles sont start, end, center et stretch (par défaut).
+
+Cette propriété s’applique sur la grille.
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr ;
+    grid-template-rows: 100px 150px;
+    align-items: start;
+
+
+Les propriétés justify-items et align-items s’appliquent toutes les deux à la grille et permettent donc d’aligner la totalité des éléments de la grille.
+
+Si vous souhaitez distinguer les alignements des différents éléments, vous devez alors utiliser les propriétés justify-self et align-self qui s’appliquent directement sur les éléments.
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr ;
+    grid-template-rows: 100px 150px;
+    justify-items: center;    
+    align-items: start;
+}
+
+.item1 {
+    justify-self: end;
+    align-self: end;
+}
+
+

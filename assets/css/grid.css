@@ -12,14 +12,12 @@ body {
     min-height:100vh;
     grid-template-rows: 6rem auto 6rem;
     grid-template-columns: 2fr 8fr;
-    grid-template-areas: "header header" "body-content body-content" "footer footer";
 }
 
 .header {
     background-color: blue;
     border: 1px solid #020202;
-    /* grid-column: 1 / span 2; */
-    grid-area: header;
+    grid-column: 1 / span 2;
     padding: 10px;
     display: flex;
     flex-flow: row nowrap;
@@ -44,38 +42,19 @@ nav a {
 }
 
 .body-content {
-    grid-area: body-content;
     background-color: rgb(255, 0, 255);
     border: 1px solid #020202;
-    padding: 10px;
-    justify-self: center;
-    align-self: center;
 }
 
-.body-content form {
-    display: grid;
-    grid-template-columns: 5fr 5fr;
-    grid-template-rows: 5fr 5fr;
-    column-gap: 10px;
-    row-gap: 10px;
-    align-content: center;
-    justify-content: center;
-}
-
-.body-content form input, .body-content form label {
-    justify-self: center;
-    align-self: center;
-}
-
-.body-content form > input[type="submit"] {
-    grid-column: 2;
+.sidebar {
+    background-color: rgb(255, 208, 0);
+    border: 1px solid #020202;
 }
 
 .footer {
     background-color: rgb(0, 238, 255);
     border: 1px solid #020202;
-    /* grid-column: 1 / span 2; */
-    grid-area: footer;
+    grid-column: 1 / span 2;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
