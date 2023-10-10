@@ -1,0 +1,147 @@
+x-sm < 600px
+sm < 768px
+
+media query
+@media gestion ecran
+
+@media only screen and (min-width: 600px) and (max-width:700px){
+    body{
+        background-color: rgb(255, 221, 0);
+    }
+}
+
+principe DRY : don't repeat yourself
+librairie : fikambanana fonctionnalité maro be fa saingy tsi mahaleo tena
+framework : squelette
+
+ef misi color pre defini : 
+primary secondary warning danger light dark success info
+
+bootstrap ef responsive
+
+misi ni resaka taille
+lg md sm xsm
+
+
+
+
+
+
+body {
+    background-color: blue;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.item-content {
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    background-color: orange;
+}
+
+/* extra small | smart-watch */
+@media only screen and (max-width: 600px){
+    body{
+        background-color: red;
+    }
+
+    .container {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .item-content {
+        width: 100%;
+    }
+}
+
+/* small | phone */
+@media only screen and (min-width: 600px){
+    body{
+        background-color: rgb(255, 221, 0);
+    }
+
+    .container {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .item-content {
+        width: 900px;
+    }
+}
+
+/* medium | tablet */
+@media only screen and (min-width: 768px){
+    body{
+        background-color: rgb(0, 255, 123);
+    }
+
+    .container {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .item-content {
+        width: 400px;
+    }
+}
+
+/* medium-large | laptop/desktop */
+@media only screen and (min-width: 992px){
+    body{
+        background-color: rgb(255, 0, 230);
+    }
+
+    .container {
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+    
+    .item-content {
+        width: 300px;
+    }
+}
+
+/*  extra-large | extra-desktop */
+@media only screen and (min-width: 1200px){
+    body{
+        background-color: rgb(0, 0, 0);
+    }
+
+    .container {
+        justify-content: center;
+        flex-flow: row nowrap;
+    }
+
+    .item-content {
+        width: 200px;
+    }
+}
+
+div class="container">
+        <div class="item-content"></div>
+        <div class="item-content"></div>
+        <div class="item-content"></div>
+        <div class="item-content"></div>
+        <div class="item-content"></div>
+        <div class="item-content"></div>
+    </div>
+
+
+    devoir atao @css si html tsotra ari atao responsive.
+    ni exercice 2 dia atao  @bootstrap
+    bonus animations apetraka
+
+    
+
+
+    
+    Exo 1 HTML + CSS + RESPONSIVE ( MEDIA QUERY )
+Exo 2 : Bootstrap
+
+tsi mandaitra ni marge ref flex fa tsi maints mihatra zai valeur eo
