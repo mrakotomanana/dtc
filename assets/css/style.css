@@ -1,36 +1,82 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .site {
-    display: grid;
-    grid-template-rows: 100px 1fr 50px;
-    grid-template-columns: 2fr 8fr;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: 6rem auto 6rem;
+  grid-template-columns: 2fr 8fr;
+  grid-template-areas: "header header" "body-content body-content" "footer footer";
 }
 
 .header {
-    background-color: blue;
-    border: 1px solid #020202;
-    grid-column: 1 / span 2;
+  background-color: #48435C;
+  grid-area: header;
+  padding: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  justify-items: center;
+}
+
+#title {
+  color: white;
+  align-self: center;
+}
+
+#right-nav {
+  border: 2px solid white;
+  padding: 10px;
+  align-self: center;
+}
+
+#right-nav a {
+  display: inline-block;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+#right-nav a:hover {
+  color: rgb(0, 0, 0);
+  background: rgb(246, 246, 250);
 }
 
 .body-content {
-    background-color: rgb(255, 0, 255);
-    border: 1px solid #020202;
-}
-
-.sidebar {
-    background-color: rgb(255, 208, 0);
-    border: 1px solid #020202;
+  grid-area: body-content;
+  background-color: #E6E49F;
+  border: 1px solid #020202;
 }
 
 .footer {
-    background-color: rgb(0, 238, 255);
-    border: 1px solid #020202;
-    grid-column: 1 / span 2;
+  background-color: #5A5766;
+  border: 1px solid #020202;
+  color: whitesmoke;
+  /* grid-column: 1 / span 2; */
+  grid-area: footer;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+}
+
+.footer #footer-right {
+  border: 1px solid rgb(0, 0, 0);
+  margin: 10px;
+  padding: 10px;
+  width: 50%;
+}
+
+.footer #footer-left {
+  border: 1px solid rgb(0, 0, 0);
+  margin: 10px;
+  padding: 10px;
+  width: 50%;
 }
