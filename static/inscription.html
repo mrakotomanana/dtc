@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/inscription.css" />
+    <link rel="shortcut icon" href="../assets/images/logo.jpg" type="image/x-icon" />
+
+    <title>My CV</title>
+</head>
+
+<body class="site">
+    <header class="header">
+        <h2 id="title">Web Portfolio</h2>
+        <nav id="right-nav">
+            <a href="../index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+            <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+            <a href="login.html"><i class="fa fa-fw fa-user"></i> Login</a>
+            <a href="inscription.html"><i class="fa fa-info"></i> Inscription</a>
+        </nav>
+    </header>
+
+    <article class="body-content">
+        <h3>Formulaire d'Inscription Scolaire</h3>
+        <form action="../index.html" method="post" id="inscrit">
+            <fieldset id="info-etudiant">
+                <legend>Informations sur les étudiants</legend>
+                <label for="family-name">Nom complet</label>
+                <input type="text" name="family-name" id="family-name" placeholder="Nom de famille">
+                <input type="text" name="first-name" id="first-name" placeholder="Prénom">
+
+                <label for="birthday">Date de naissance</label>
+                <input id="birthday" name="birthday" type="date">
+
+                <label for="email">Adresse email</label>
+                <input id="email" name="email" type="email">
+
+                <label for="email">Année d'entrée</label>
+                <input id="email" name="email" type="number">
+
+                <label for="homme">Masculin</label>
+                <input type="radio" name="sexe" id="homme">
+                
+                <label for="femme">Feminin</label>
+                <input type="radio" name="sexe" id="femme">
+            </fieldset>
+
+            <fieldset id="info-residence">
+                <legend>Informations sur la résidence actuelle</legend>
+                <label for="address">Quelle est ton adresse ?</label>
+                <input type="text" name="address" id="address" placeholder="Adresse">
+                <input type="text" name="ville" id="ville" placeholder="Votre ville">
+                <input type="text" name="code-postal" id="code-postal" placeholder="Votre code postal">
+                <input type="text" name="pays" id="pays" placeholder="Votre pays">
+            </fieldset>
+
+            <input type="submit" value="Soumettre" value="ok">
+        </form>
+    </article>
+
+
+    <footer class="footer">
+        <p id="footer-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nemo eveniet
+            provident
+            ducimus deleniti
+            architecto soluta! Voluptate dolorum iste necessitatibus repudiandae quo fuga molestias quaerat debitis,
+            delectus, non inventore libero.
+        </p>
+        <p id="footer-right">&copy; Editon 2023</p>
+    </footer>
+</body>
+
+</html>

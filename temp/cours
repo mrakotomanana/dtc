@@ -137,3 +137,63 @@ Si vous souhaitez distinguer les alignements des différents éléments, vous de
 }
 
 
+Les unités absolues sont les suivantes :
+
+Les pixels (px)
+Les pouces (in)
+Les centimètres (cm)
+Les millimètres (mm)
+Les picas (pc)
+Les points (pt)
+
+À l’opposé des unités absolues, il existe des unités qui font varier la taille d’un élément en fonction de la taille de la police ou de l’élément parent.
+
+Ces unités dites relatives au texte sont de plus en plus utilisées pour harmoniser les éléments d’un design. On retrouve :
+
+Em : elle est proportionnelle à la taille de la police de l’élément parent ou du document. Par défaut, 1 em = 16 px si aucune taille de police n’est définie.
+Rem : l’unité rem fait toujours référence à la taille de la police de l’élément racine. En d’autres termes, elle dépend du font-size définit par défaut.
+Ex : très rarement utilisée, cette unité est relative à la hauteur de la police actuelle en minuscule.
+Ch : cette unité est elle aussi peu utilisée, elle est relative à la largeur du caractère “0”.
+Parmi ces unités relatives au texte, vous serez amené à utiliser le em. Cette unité de mesure permet de garder un texte lisible. Autre avantage, si vous souhaitez modifier la taille de votre police d’écriture, vos éléments enfants s’ajusteront automatiquement.
+
+Les unités relatives au viewport
+D’autres unités permettent aux éléments de s’adapter à la taille du viewport, c’est-à-dire à la taille de la fenêtre du navigateur.
+
+La hauteur du viewport (vh)
+La largeur du viewport (vw)
+Le viewport minimum (vmin)
+Le viewport maximum (vmax)
+
+Les unités vh et vw
+Les unités vh et vw sont similaires, à la seule différence qu’elles dépendent respectivement de la hauteur et de la largeur de la fenêtre de navigation.
+
+Retenez que 1 vh = 1 % de la hauteur du viewport et que 1 vw = 1 % de la largeur du viewport.
+
+L’unité de mesure vh est généralement utilisée pour permettre à un élément de s’adapter à la hauteur totale de la fenêtre :
+
+.box {
+height :100vh ;
+background : red ;
+}
+
+Dans cet exemple ci-dessus, l’élément box a une hauteur de 100 % par rapport à la hauteur de la fenêtre de navigation.
+
+Prenons un autre exemple :
+
+h1{
+font-size : 6 vw ;
+}
+
+Ici la taille du titre H1 correspond à 6% de la largeur de la fenêtre. Par conséquent, si cette dernière est de 1000 px, la taille de la police sera de 60 px.
+
+Les unités vmin et vmax
+Ces deux unités de mesure en CSS fonctionnent selon le même principe.
+
+Avec le vmin, c’est la dimension minimale du viewport qui est prise en compte. Par exemple, si ce dernier est de 1000 px de haut par 800 px de large, les éléments ayant une unité vmin s’adapteront en fonction de la largeur de la fenêtre.
+
+Avec le vmax, les éléments s’adaptent en fonction de la dimension maximale du viewport. Selon l’exemple précédent, 1 vmax = 10 px.
+
+Les unités en pourcentage
+Le pourcentage fait partie des unités relatives de façon générale puisqu’il s’adapte en fonction de son élément parent.
+
+La plupart du temps, cette unité est utilisée pour définir la hauteur et la largeur d’un élément. Vous la retrouverez notamment dans le framework Bootstrap.
