@@ -10,9 +10,9 @@ body {
 .site {
   display: grid;
   min-height: 100vh;
-  grid-template-rows: 6rem auto 6rem;
+  grid-template-rows: 6rem auto auto;
   grid-template-columns: 2fr 8fr;
-  grid-template-areas: "header header" "body-content body-content" "footer footer";
+  grid-template-areas: "header header""body-content body-content""footer footer";
 }
 
 .header {
@@ -21,23 +21,26 @@ body {
   padding: 10px;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-around;
-  justify-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #title {
   color: white;
-  align-self: center;
+  width: 200px;
+  flex: none; 
+  /* white-space: nowrap;
+  margin: 5px; */
 }
 
 #right-nav {
   border: 2px solid white;
-  padding: 10px;
-  align-self: center;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
 #right-nav a {
-  display: inline-block;
   padding: 15px;
   color: white;
   text-decoration: none;
@@ -61,22 +64,61 @@ body {
   /* grid-column: 1 / span 2; */
   grid-area: footer;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-around;
   justify-items: center;
   align-items: center;
 }
 
-.footer #footer-right {
+.footer p {
   border: 1px solid rgb(0, 0, 0);
   margin: 10px;
   padding: 10px;
   width: 50%;
 }
 
-.footer #footer-left {
-  border: 1px solid rgb(0, 0, 0);
-  margin: 10px;
+#footer-right {
+  align-content: flex-end;
+}
+
+.flex {
+  display: flex;
+  flex-flow: column;
+
+  align-items: center;
+  justify-items: center;
+
+  justify-content: space-evenly;
+  align-content: space-evenly;
+
+  height: 200px;
+  border: 1px solid black;
+}
+
+.flex div {
+  width: 100px;
+  border: 1px solid black;
+}
+
+.banner {
+  background-color: aquamarine;
+  border: 1px solid black;
   padding: 10px;
-  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.banner p {
+  margin-top: 0;
+}
+
+.banner a {
+  text-decoration: none;
+  line-height: 1;
+  color: white;
+  background: blue;
+  padding: 5px 10px;
 }

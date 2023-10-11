@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Footer</title>
+
+    <style>
+        html, body {
+            margin: 0;
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            height: 60px;
+            background: goldenrod;
+            flex: none;
+        }
+
+        footer {
+            height: 80px;
+            background: greenyellow;
+            margin-top: auto;
+            flex: none;
+        }
+        main {
+            display: flex;
+        }
+
+        article {
+            flex: 1 1;
+        }
+
+        aside {
+            width: 250px;
+            flex: none;
+            background: black;
+            color: wheat;
+        }
+    </style>
+</head>
+<body>
+    <header>Header</header>
+
+    <main>
+        <article>
+            Article<div style="height: 2500px;"></div>
+        </article>
+        <aside>SideBar</aside>
+    </main>
+
+    <footer>Footer</footer>
+</body>
+</html>
