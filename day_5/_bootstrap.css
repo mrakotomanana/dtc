@@ -11,11 +11,11 @@ body {
 
 .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
 }
 
-.wrap {
+.wrap, .help, .help-title {
     border: 2px solid #000000;
     margin-top: 0;
     margin-left: auto;
@@ -28,7 +28,8 @@ body {
 
 .wrap>div {
     border: 2px solid #000000;
-    padding: 10px;
+    padding: 20px;
+    color: white;
 }
 
 .image {
@@ -37,23 +38,94 @@ body {
     border-radius: 1%;
     position: relative;
     top: 100px;
-    left: 50px;
 } 
 
 .div1 {
-    background: #229c88;
+    background: #ffffff;
 }
 
 .hafa{
     height: 100px;
-    background: yellowgreen;
+    background: #654df6;
 }
 
 .div2 {
-    background: yellowgreen;
+    background: #654df6;
+}
+
+.div2 h1 {
+    width: 340px;
+    font-size: 50px;
 }
 
 .div3 {
-    background: yellowgreen;
-    
+    background: #654df6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px 10px;
+}
+
+#div2-right {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-rows: auto auto;
+    gap: 10px 10px;
+}
+
+#div2-right p {
+    padding: 10px;
+    color: whitesmoke;
+    justify-self: flex-start;
+}
+
+#div2-right a {
+    background: #f3f1fb;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 9%;
+    justify-self: flex-start;
+}
+
+.help > div {
+    flex-shrink: 0;
+    border: 2px solid #000000;
+}
+
+.help-title {
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+}
+
+.help-title h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 100px;
+}
+
+.help-content {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 10px 10px;
+    justify-content: center;
+    align-content: center;
+}
+
+.help-content div {
+    border: 2px solid #000000;
+    text-align: center;
+    padding: 10px;
+}
+
+.help-button {
+    padding: 10px;
+    text-align: center;
+}
+
+.help-button > button {
+    width: 176px;
+    background: #8268ff;
+    border-radius: 8%;
 }
