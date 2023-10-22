@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#demo {
+    background-color: brown;
+    color: white;
+    border: 12px solid green;
+    margin: auto;
+    padding: 10px;
+    width: 80%;
+    height: 100vh;
+    outline-style: dashed;
+    outline-color: black;
+    outline-width: 3px;
+    outline-offset: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    gap: 10px;
+}
+
+#last-left {
+    border: 1px solid #000000;
+    padding: 10px;
+    grid-area: span 2 / 1;
+}
+
+.card {
+    border: 1px solid #000000;
+    padding: 10px;
+}
