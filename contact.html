@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+<body>
+    <header>
+        <h1>Le Restaurant Fiasco</h1>
+        <nav>
+            <a href="./index.html">Accueil</a>
+            <a href="./menu.html">Menu</a>
+            <a href="./contact.html">Contact</a>
+        </nav>
+        <img src="./static/images/banner-menu.jpg" alt="Restaurant Fiasco">
+    </header>
+    <section>
+        <h2>Où nous trouver</h2>
+        <p>
+            128 rue demonstration <br>
+            34000 Montpelier <br>
+            France
+        </p>
+    </section>
+    <h2>Nous envoyer un email</h2>
+    <form action="contact.html">
+        <div>
+            <label for="email">Votre email <sup>*</sup></label>
+            <input type="text" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="prenom">Votre prénom <sup>*</sup></label>
+            <input type="text" name="prenom" id="prenom" required>
+        </div>
+        <div>
+            <label for="message">Votre message <sup>*</sup></label>
+            <textarea name="message" id="message" required></textarea>
+        </div>
+        <button type="submit">Envoyer</button>
+    </form>
+    <footer>
+        <address>128 rue demonstration</address>
+    </footer>
+</body>
+</html>

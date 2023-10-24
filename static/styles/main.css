@@ -41,4 +41,5 @@ body{
 .card {
     border: 1px solid #000000;
     padding: 10px;
+    border-radius: 10%;
 }
