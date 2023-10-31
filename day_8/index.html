@@ -10,11 +10,17 @@
 </head>
 <body>
     
-    <div class="form-container">
-        <form action="#">
-
-
+    <div id="form-container">
+        <form action="./" method="post">
+            <label for="limit">Limit</label>
+            <input type="text" id="limit" name="limit">
+            <label for="sentences">Sentences</label>
+            <input type="text" id="sentences" name="sentences">
+            <button id="submit">Submit</button>
         </form>
+    </div>
+    <div id="result-container">
+
     </div>
 
     <script src="./assets/js/mains.js"></script>
