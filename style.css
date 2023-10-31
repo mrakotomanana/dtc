@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+body {
+  display: flex;
+}
+
+.left, .right {
+  flex: 1;
+}
+
+.left {
+  background: orange;
+}
+
+.right {
+  background: cyan;
+}
