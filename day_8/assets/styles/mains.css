@@ -1,0 +1,50 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#form-container {
+    color: white;
+    background: rgb(97, 85, 85);
+    text-align: center;
+    padding: 10px;
+}
+
+input, label, button {
+    padding: 5px;
+}
+
+#result-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 10px;
+    background: rgb(91, 155, 180);
+    color: whitesmoke;
+}
+
+#content {
+    justify-self: flex-start;
+    align-self: center;
+    width: 90%;
+}
+
+#closebtn {
+    justify-self: flex-end;
+    align-self: center;
+}
+
+#closebtn:hover {
+    color: black;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px){
+    #form-container form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
