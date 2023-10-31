@@ -1,50 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Boucle</title>
 
-  <link rel="stylesheet" href="./assets/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="./assets/css/main.css" />
-  <link rel="shortcut icon" href="./assets/images/logo.jpg" type="image/x-icon" />
-
-  <title>My CV</title>
-
-  <style>
-    p {
-      background-color: #ccc;
-    }
-    .statiqu {
-      position: relative;
-    }
-    .gauche {
-      width: 100px;
-      height: 100px;
-    }
-  </style>
-
+    <link rel="stylesheet" href="./assets/styles/mains.css">
 </head>
-
 <body>
-  <header>
-    <h2 id="title">Web Portfolio</h2>
-    <nav id="right-nav">
-      <a href="#"><i class="fa fa-fw fa-home"></i> Home</a>
-      <a href="./static/contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
-      <a href="./static/login.html"><i class="fa fa-fw fa-user"></i> Login</a>
-      <a href="./exemple.html"><i class="fa fa-fw fa-user"></i> Exemple</a>
-    </nav>
-  </header>
-  <main>
-    <p>un premier paragraphe</p>
-    <p class="statique">Un deuxième paragraphe</p>
-    <p class="statique gauche">un troisième paragraphe</p>
-    <p>un premier paragraphe</p>
-  </main>
-  <footer>
+    
+    <div id="form-container">
+        <form action="./" method="post">
+            <label for="limit">Limit</label>
+            <input type="text" id="limit" name="limit">
+            <label for="sentences">Sentences</label>
+            <input type="text" id="sentences" name="sentences">
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+    <div id="result-container">
+        <div id="content">
+        </div>
+        <div id="closebtn"><b>&times;</b></div>
+    </div>
 
-  </footer>
+    <script src="./assets/js/mains.js"></script>
 </body>
-
 </html>
