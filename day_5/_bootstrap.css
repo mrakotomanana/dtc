@@ -59,6 +59,7 @@ body {
 }
 
 .div3 {
+<<<<<<< HEAD
     background: #654df6;
     display: flex;
     flex-direction: row;
@@ -127,4 +128,9 @@ body {
     width: 176px;
     background: #8268ff;
     border-radius: 8%;
+=======
+    background: yellowgreen;
+    display: grid;
+    grid-template-columns: auto auto;
+>>>>>>> 5ec2d3e0cd7ab4af4c00102a393088ee44d6888b
 }
