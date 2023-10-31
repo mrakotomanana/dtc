@@ -14,8 +14,7 @@ closebtn.addEventListener('click', () =>{
 form.addEventListener('submit',function(event) {
     event.preventDefault();
     resultContent.innerHTML = "";
-    console.log(sentences.value.trim().length);
-    console.log(limit.value.trim());
+   
     if(limit == null || limit == undefined || sentences == null || sentences == undefined || sentences.value.trim().length <= 0 || isNaN(Number.parseInt(limit.value.trim())) || limit.value.trim() == 0){
         let para = document.createElement('p');
         para.innerText = 'Please enter a valid sentence and limit';
