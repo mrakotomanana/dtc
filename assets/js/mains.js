@@ -1,11 +1,39 @@
 let closebtn = document.getElementById('closebtn');
+let closebtnSelect = document.getElementById('closebtn-select');
+
 let resultContent = document.getElementById('content');
 let resultContainerParent = document.getElementById('result-container');
+let selectContainer = document.getElementById('select-container');
+let selectImage = document.getElementById('selectImage');
+let contentSelect = document.getElementById('content-select');
+let resultSelect = document.getElementById('result-select');
 
 let limit = document.getElementById('limit');
 let sentences = document.getElementById('sentences');
 
-let form = document.querySelector('#form-container > form')
+let form = document.querySelector('#form-container > form');
+
+const images = ['img_mountains_wide.jpg', 'img_nature_wide.jpg', 'img_snow_wide.jpg', 'img_band_ny.jpg'];
+
+selectImage.addEventListener('change', function(event){
+    event.preventDefault();
+    contentSelect.innerHTML = "";
+    let index = this.value;
+    let imageIndex = images[index];
+    let image = document.createElement('img');
+    image.src = "./assets/images/" + imageIndex;
+    image.width = '400';
+    image.height = '300';
+    console.log(image);
+    let hr = document.createElement('hr');
+    contentSelect.appendChild(image);
+    contentSelect.appendChild(hr);
+    resultSelect.style.display = 'flex';
+})
+
+closebtnSelect.addEventListener('click', () =>{
+    resultSelect.style.display = 'none';
+});
 
 closebtn.addEventListener('click', () =>{
     resultContainerParent.style.display = 'none';
@@ -27,6 +55,11 @@ form.addEventListener('submit',function(event) {
         while(count <= valueLimit){
             let para = document.createElement('p');
             para.innerText = count + " - " + sentencesValue;
+            if(count % 2 === 0){
+                para.style.backgroundColor = 'rgb(158, 185, 179)';
+                para.style.color = 'black';
+            }
+
             let hr = document.createElement('hr');
             resultContent.appendChild(para);
             resultContent.appendChild(hr);

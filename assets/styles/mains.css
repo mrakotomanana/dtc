@@ -3,6 +3,11 @@
     src: url('../fonts/roboto/Roboto-Regular.ttf');
 }
 
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('../fonts/roboto/Roboto-Bold.ttf');
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -10,7 +15,7 @@
     font-family: 'Roboto Regular', sans-serif;
 }
 
-#form-container {
+#form-container, #select-container {
     color: white;
     background: rgb(97, 85, 85);
     text-align: center;
@@ -19,9 +24,10 @@
 
 input, label, button {
     padding: 5px;
+    font-family: 'Roboto Bold', sans-serif;
 }
 
-#result-container {
+#result-container, #result-select {
     display: none;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -31,24 +37,29 @@ input, label, button {
     color: whitesmoke;
 }
 
-#content {
+#content, #content-select {
     justify-self: flex-start;
     align-self: center;
     width: 90%;
 }
 
-#closebtn {
+#content > p:hover {
+    background: rgb(35, 41, 40)!important;
+    color: white!important;
+}
+
+#closebtn, #closebtn-select {
     justify-self: flex-end;
     align-self: center;
 }
 
-#closebtn:hover {
+#closebtn:hover, #closebtn-select:hover {
     color: black;
     cursor: pointer;
 }
 
 @media only screen and (max-width: 600px){
-    #form-container form {
+    #form-container form, #select-container form {
         display: flex;
         flex-direction: column;
     }

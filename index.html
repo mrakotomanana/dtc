@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,9 @@
 
     <link rel="stylesheet" href="./assets/styles/mains.css">
 </head>
+
 <body>
-    
+
     <div id="form-container">
         <form action="./" method="post">
             <label for="limit">Limit</label>
@@ -24,7 +26,24 @@
         </div>
         <div id="closebtn"><b>&times;</b></div>
     </div>
-
+    <div id="select-container">
+        <form action="./" method="post">
+            <label for="selectImage">Choose a image :</label>
+            <select id="selectImage" name="selectImage">
+                <option >Choisir une image</option>
+                <option value="0">Mountains</option>
+                <option value="1">Nature</option>
+                <option value="2">Snow</option>
+                <option value="3">Band Ny</option>
+            </select>
+        </form>
+    </div>
+    <div id="result-select">
+        <div id="content-select">
+        </div>
+        <div id="closebtn-select"><b>&times;</b></div>
+    </div>
     <script src="./assets/js/mains.js"></script>
 </body>
+
 </html>
