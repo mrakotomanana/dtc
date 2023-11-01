@@ -20,14 +20,22 @@ selectImage.addEventListener('change', function(event){
     contentSelect.innerHTML = "";
     let index = this.value;
     let imageIndex = images[index];
-    let image = document.createElement('img');
-    image.src = "./assets/images/" + imageIndex;
-    image.width = '400';
-    image.height = '300';
-    console.log(image);
-    let hr = document.createElement('hr');
-    contentSelect.appendChild(image);
-    contentSelect.appendChild(hr);
+    if(imageIndex < 0 || imageIndex == null || imageIndex == undefined){
+        let para = document.createElement('p');
+        para.innerText = 'Please enter a valid image';
+        let hr = document.createElement('hr');
+        contentSelect.appendChild(para);
+        contentSelect.appendChild(hr);
+    }else{
+        let image = document.createElement('img');
+        image.src = "./assets/images/" + imageIndex;
+        image.width = '400';
+        image.height = '300';
+        console.log(image);
+        let hr = document.createElement('hr');
+        contentSelect.appendChild(image);
+        contentSelect.appendChild(hr);
+    }
     resultSelect.style.display = 'flex';
 })
 
