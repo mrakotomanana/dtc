@@ -1,0 +1,65 @@
+.dot {
+  cursor: pointer;
+  background: black;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  border-radius: 50%;
+  opacity: 0.3;
+  transition: background-color 0.6s ease;
+  margin: 0 2px;
+}
+
+.dot:hover {
+  opacity: 1;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  height: 90vh;
+  position: relative;
+  margin: auto;
+  padding: 15px;
+  border: 1px solid red;
+}
+
+.slideshow-container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.slideshow-container .content {
+  width: 80%;
+  height: auto;
+  border: 1px solid;
+  margin: auto;
+  overflow: hidden;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  margin-right: 15px;
+  top: 50%;
+  width: auto;
+  border: 1px solid;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}

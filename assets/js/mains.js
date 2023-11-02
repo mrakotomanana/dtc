@@ -15,18 +15,18 @@ let form = document.querySelector('#form-container > form');
 
 const images = ['img_mountains_wide.jpg', 'img_nature_wide.jpg', 'img_snow_wide.jpg', 'img_band_ny.jpg'];
 
-selectImage.addEventListener('change', function(event){
+selectImage.addEventListener('change', function (event) {
     event.preventDefault();
     contentSelect.innerHTML = "";
     let index = this.value;
     let imageIndex = images[index];
-    if(imageIndex < 0 || imageIndex == null || imageIndex == undefined){
+    if (imageIndex < 0 || imageIndex == null || imageIndex == undefined) {
         let para = document.createElement('p');
         para.innerText = 'Please enter a valid image';
         let hr = document.createElement('hr');
         contentSelect.appendChild(para);
         contentSelect.appendChild(hr);
-    }else{
+    } else {
         let image = document.createElement('img');
         image.src = "./assets/images/" + imageIndex;
         image.width = '400';
@@ -39,31 +39,32 @@ selectImage.addEventListener('change', function(event){
     resultSelect.style.display = 'flex';
 })
 
-closebtnSelect.addEventListener('click', () =>{
+closebtnSelect.addEventListener('click', () => {
     resultSelect.style.display = 'none';
 });
 
-closebtn.addEventListener('click', () =>{
+closebtn.addEventListener('click', () => {
     resultContainerParent.style.display = 'none';
 });
 
-form.addEventListener('submit',function(event) {
+form.addEventListener('submit', function (event) {
     event.preventDefault();
     resultContent.innerHTML = "";
-    if(sentences == null || sentences == undefined || sentences.value.trim().length <= 0 || limit.value.trim() == 0 || !isNumberFromInput(Number(limit.value.trim())) ){
+    console.log(/^\d+$/.test(limit.value.trim()));
+    if (!isSentencesValid(sentences.value) || !isNumberInput(limit.value.trim())) {
         let para = document.createElement('p');
         para.innerText = 'Please enter a valid sentence (string) and limit (integer)';
         let hr = document.createElement('hr');
         resultContent.appendChild(para);
         resultContent.appendChild(hr);
-    }else{
+    } else {
         let valueLimit = limit.value.trim();
         let sentencesValue = sentences.value;
         let count = 1;
-        while(count <= valueLimit){
+        while (count <= valueLimit) {
             let para = document.createElement('p');
             para.innerText = count + " - " + sentencesValue;
-            if(count % 2 === 0){
+            if (count % 2 === 0) {
                 para.style.backgroundColor = 'rgb(158, 185, 179)';
                 para.style.color = 'black';
             }
@@ -77,6 +78,10 @@ form.addEventListener('submit',function(event) {
     resultContainerParent.style.display = 'flex';
 });
 
-function isNumberFromInput(values) {
-    return typeof values === 'number' && Number.isInteger(values);
+function isNumberInput(values) {
+    return /^\d+$/.test(values) && values < 101 && values > 0;
+}
+
+function isSentencesValid(values) {
+    return values != null && values != undefined && values.trim().length > 0;
 }
