@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+    <title>Form Exo</title>
+</head>
+<body>
+	<form action="">
+		<select>
+			<option value="1">Choix 1</option>
+			<option value="2" selected aria-label="choix-2">Choix 2</option>
+			<option value="3">Choix 3</option>
+		</select>
+	</form>
+	<script>
+        var select = document.querySelector('select');
+        select.addEventListener('change', function(event) {
+            event.preventDefault();
+            console.log(this.selectedIndex);
+        });
+    </script>
+</body>
+</html>

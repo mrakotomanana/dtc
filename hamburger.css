@@ -1,0 +1,68 @@
+*,
+*::before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  text-align: center;
+}
+
+.hamburger {
+  position: absolute;
+  top: 200px;
+}
+
+.hamburger + label {
+  cursor: pointer;
+  position: relative;
+  margin: 5rem auto;
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  width: 80px;
+}
+
+.checks {
+	cursor: pointer;
+	position: relative;
+	top: -150px;
+	margin: 5rem auto;
+	display: flex;
+	justify-content: center;
+	height: 60px;
+	width: 80px;
+  }
+
+.hamburger + label span {
+  position: absolute;
+  top: 50%;
+  margin-top: -5px;
+  width: 80px;
+  height: 10px;
+  background-color: #18171a;
+  border-radius: 20px;
+}
+
+.checks span {
+	position: absolute;
+	top: 50%;
+	margin-top: -5px;
+	width: 80px;
+	height: 10px;
+	background-color: #aa7e1f;
+	border-radius: 20px;
+  }
+
+.hamburger:checked + label span {
+  transform: rotate(45deg);
+}
+
+.hamburger:checked ~ .checks span {
+	transform: rotate(-45deg);
+  }
